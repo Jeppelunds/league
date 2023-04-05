@@ -24,11 +24,16 @@ body{
 }
 
 input{
-    width: 80%;
+    width: 60%;
     height: 40px;
     font-size: 2rem;
     border: 1px solid black;
     padding: 5px;
+}
+
+button{
+width: 15%;
+height: 40px;
 }
 
 .champ-name{
@@ -52,6 +57,12 @@ input{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+}
+
+.grid-template p{
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 
 .grid-template div img{
@@ -88,3 +99,16 @@ input{
     color: white;
 }
 
+@media only screen and (min-width: 800px) {
+ .grid-area{
+    width: 40%;
+ }
+
+ .grid-template{
+    grid-template-columns: repeat(2, 1fr);
+ }
+
+ .lore p{
+    width: 40%;
+ }
+}
