@@ -40,6 +40,12 @@ if (searchBar.value === "Wukong") {
   searchBar.value = "TahmKench";
 } else if (searchBar.value === "Twisted Fate") {
   searchBar.value = "TwistedFate";
+}else if(searchBar.value === "Bel'veth"){
+  searchBar.value = "Belveth"
+}else if(searchBar.value === "Cho'gath"){
+  searchBar.value = "Chogath"
+}else if(searchBar.value === "Vel'koz"){
+  searchBar.value = "Velkoz"
 }
 
   champSearch = searchBar.value;
@@ -58,6 +64,7 @@ if (searchBar.value === "Wukong") {
       let skinsHTML = "";
       array.forEach((skin) => {
         skinsHTML += `<div>
+        <p>${skin.name}<p>
       <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${gamer[champSearch].id}_${skin.num}.jpg" alt="">
   </div>`;
       });
