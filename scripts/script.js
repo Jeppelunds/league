@@ -53,7 +53,7 @@ if (searchBar.value === "Wukong") {
   console.log(champSearch);
 
   fetch(
-    `http://ddragon.leagueoflegends.com/cdn/13.6.1/data/en_US/champion/${champSearch}.json`
+    `https://ddragon.leagueoflegends.com/cdn/13.6.1/data/en_US/champion/${champSearch}.json`
   )
     .then((response) => response.json())
     .then((data) => {
